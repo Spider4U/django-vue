@@ -31,7 +31,7 @@ class SendMessage(object):
         data = {
             'apikey': self.api_key,
             'mobile': mobile,
-            'text': f'【王佳吉敏】您的验证码是{code}，有效期为30分钟，请勿在10分钟内反复发送。如非本人操作，请忽略本短信'
+            'text': f'【XXXX】您的验证码是{code}，有效期为30分钟，请勿在10分钟内反复发送。如非本人操作，请忽略本短信'
         }
 
         r = requests.post(self.single_send_url, data=data)
